@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Config Diff</title>
+  <style>
+    body { font-family: monospace; padding: 1rem; background: #1e1e1e; color: #d4d4d4; }
+    h2 { color: #9cdcfe; font-size: 1rem; }
+    .files { color: #888; font-size: .85rem; margin-bottom: 1rem; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: .3rem .6rem; border: 1px solid #3c3c3c; text-align: left; }
+    th { background: #2d2d2d; color: #9cdcfe; }
+    td.k { color: #ce9178; white-space: nowrap; }
+    tr.diff td { background: #2d2d00; }
+    tr.missing td { background: #3d0000; }
+  </style>
+</head>
+<body>
+  <h2>Creality Config Block Diff</h2>
+  <div class="files"><b>A:</b> {file_a}<br><b>B:</b> {file_b}</div>
+  {table}
+</body>
+</html>
